@@ -1,13 +1,15 @@
+_Support this and all my katas via [Patreon](https://www.patreon.com/EmilyBache)_
+
 # Gilded Rose Refactoring Kata
 
-You can find out more about this exercise in my YouTube video [Why Developers LOVE The Gilded Rose Kata](https://youtu.be/Mt4XpGxigT4).
+You can find out more about this exercise in my YouTube video [Why Developers LOVE The Gilded Rose Kata](https://youtu.be/Mt4XpGxigT4). I also have a video of a worked solution in Java - [Gilded Rose Kata, Hands-on](https://youtu.be/OdnV8hc9L7I)
 
 I use this kata as part of my work as a technical coach. I wrote a lot about the coaching method I use in this book [Technical Agile Coaching with the Samman method](https://leanpub.com/techagilecoach). A while back I wrote this article ["Writing Good Tests for the Gilded Rose Kata"](http://coding-is-like-cooking.info/2013/03/writing-good-tests-for-the-gilded-rose-kata/) about how you could use this kata in a [coding dojo](https://leanpub.com/codingdojohandbook).
 
 
 ## How to use this Kata
 
-The simplest way is to just clone the code and start hacking away improving the design. You'll want to look at the ["Gilded Rose Requirements"](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/main/GildedRoseRequirements.txt) which explains what the code is for. I strongly advise you that you'll also need some tests if you want to make sure you don't break the code while you refactor.
+The simplest way is to just clone the code and start hacking away improving the design. You'll want to look at the ["Gilded Rose Requirements"](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/main/GildedRoseRequirements.md) which explains what the code is for. I strongly advise you that you'll also need some tests if you want to make sure you don't break the code while you refactor.
 
 You could write some unit tests yourself, using the requirements to identify suitable test cases. I've provided a failing unit test in a popular test framework as a starting point for most languages.
 
@@ -20,7 +22,7 @@ Please don't send me a pull request with your solution. It can be a bit confusin
 
 ### Gilded Rose Requirements in other languages 
 
-- [English](GildedRoseRequirements.txt)
+- [English](GildedRoseRequirements.md)
 - [Español](GildedRoseRequirements_es.md)
 - [Français](GildedRoseRequirements_fr.md)
 - [Italiano](GildedRoseRequirements_it.md)
@@ -31,6 +33,7 @@ Please don't send me a pull request with your solution. It can be a bit confusin
 - [中文](GildedRoseRequirements_zh.txt)
 - [한국어](GildedRoseRequirements_kr.md)
 - [German](GildedRoseRequirements_de.md)
+- [Euskara](GildedRoseRequirements_eu.md)
 
 ## Text-Based Approval Testing
 
