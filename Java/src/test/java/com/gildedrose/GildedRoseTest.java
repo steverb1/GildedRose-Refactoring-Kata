@@ -94,12 +94,21 @@ class GildedRoseTest {
         assertEquals(12, item.quality);
     }
 
-//    @Test
-//    void backstagePassesAndxxx() {
-//        Item item = new Item("Backstage passes to a TAFKAL80ETC concert", 7, 2);
-//        items = new Item[] {item};
-//        GildedRose app = new GildedRose(items);
-//        app.updateQuality();
-//        assertEquals(4, item.quality);
-//    }
+    @Test
+    void backstagePassesAndxxx() {
+        Item item = new Item("Backstage passes to a TAFKAL80ETC concert", 7, 2);
+        items = new Item[] {item};
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(4, item.quality);
+    }
+
+    @Test
+    void sulfurasAndxxx() {
+        Item item = new Item("Sulfuras, Hand of Ragnaros", 7, 2);
+        items = new Item[] {item};
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(2, item.quality);
+    }
 }
