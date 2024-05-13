@@ -86,7 +86,7 @@ class GildedRoseTest {
     }
 
     @Test
-    void agedBrieQualityLessThan50_QualityIs11() {
+    void agedBrieQualityIncreasesDoubleAfterSellData() {
         Item item = new Item("Aged Brie", -1, 10);
         items = new Item[] {item};
         GildedRose app = new GildedRose(items);
@@ -105,10 +105,10 @@ class GildedRoseTest {
 
     @Test
     void sulfurasAndxxx() {
-        Item item = new Item("Sulfuras, Hand of Ragnaros", 7, 2);
+        Item item = new Item("Sulfuras, Hand of Ragnaros", 7, 80);
         items = new Item[] {item};
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals(2, item.quality);
+        assertEquals(80, item.quality);
     }
 }
