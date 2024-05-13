@@ -23,34 +23,33 @@ class GildedRose {
 
     public void updateQuality() {
         for (int i = 0; i < items.length; i++) {
-            if (specialItems.contains(items[i].name)) {
-                if (items[i].quality < MAX_QUALITY) {
-                    items[i].quality = items[i].quality + 1;
-
-                    handleIminentBackstagePasses(i);
-                }
-            } else {
+            if (!specialItems.contains(items[i].name)) {
                 decreaseQuality(i);
+            } else {
+                increaseQuality(i);
             }
 
-            if (!items[i].name.equals(SULFURAS)) {
-                items[i].sellIn = items[i].sellIn - 1;
-            }
+            handleIminentBackstagePasses(i);
+
+            decrementSellIn(i);
 
             if (items[i].sellIn < 0) {
-               // if (!specialItems.contains(items[i].name)) {
+                if (!specialItems.contains(items[i].name)) {
+                    decreaseQuality(i);
+                }
                 if (items[i].name.equals(AGED_BRIE)) {
                     increaseQuality(i);
-                } else {
-                    if (!items[i].name.equals(BACKSTAGE_PASSES)) {
-                        if (!items[i].name.equals(SULFURAS)) {
-                            decreaseQuality(i);
-                        }
-                    } else {
-                        items[i].quality = 0;
-                    }
+                }
+                if (items[i].name.equals(BACKSTAGE_PASSES)) {
+                    items[i].quality = 0;
                 }
             }
+        }
+    }
+
+    private void decrementSellIn(int i) {
+        if (!items[i].name.equals(SULFURAS)) {
+            items[i].sellIn = items[i].sellIn - 1;
         }
     }
 
