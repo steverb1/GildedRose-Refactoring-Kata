@@ -1,3 +1,4 @@
+*.class
 bin
 obj
 *.sln.DotSettings.user
